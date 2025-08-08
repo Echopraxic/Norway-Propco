@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aideus – Norway Propco</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #FFFFFF;
+      color: #4C5454;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #FFFFFF;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4C5454;
+    }
+
+    .navbar .menu-button {
+      font-size: 1rem;
+      background-color: #abdbe3;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      color: #4C5454;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 2rem;
+      background-color: #FFFFFF;
+      border: 1px solid #ddd;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      color: #4C5454;
+      font-weight: 500;
+      border-bottom: 1px solid #eee;
+      transition: background-color 0.2s;
+      font-family: 'Quattrocento', serif;
+    }
+
+    .dropdown a:last-child {
+      border-bottom: none;
+    }
+
+    .dropdown a:hover {
+      background-color: #abdbe3;
+      color: #FFFFFF;
+    }
+
+    header {
+      padding: 1rem 2rem;
+      background-color: #abdbe3;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #4C5454;
+    }
+
+    .divider {
+      height: 2px;
+      background-color: #abdbe3;
+      margin: 2rem auto;
+      width: 80%;
+    }
+
+    .content {
+      padding: 2rem;
+      font-family: 'Quattrocento', serif;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+      color: #4C5454;
+    }
+
+    .section p,
+    .section ul {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .section ul {
+      padding-left: 1.2rem;
+    }
+
+    .section li {
+      margin-bottom: 0.5rem;
+    }
+
+    .contact {
+      background-color: #f5f5f5;
+      padding: 1.5rem;
+      border-left: 4px solid #abdbe3;
+      font-family: 'Quattrocento', serif;
+    }
+
+    @media (max-width: 768px) {
+      .dropdown {
+        left: 1rem;
+        right: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <button class="menu-button" onclick="toggleDropdown()">Menu</button>
+    <div class="logo">Norway Propco</div>
+    <div class="dropdown" id="dropdownMenu">
+      <a href="npc landing.html">OUR EXPERIENCE</a>
+      <a href="npc about us.html">ABOUT US</a>
+      <a href="npc aideus.html">AIDEUS</a>
+      <a href="npc projects.html">OUR PROJECTS</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Aideus</h1>
+  </header>
+
+  <!-- Content -->
+  <div class="content">
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>Venture Capital at the Edge of Innovation</h2>
+      <p>Aideus is the venture capital arm of Norway Propco. We back bold ideas and visionary founders building the future of sustainable living, design, and intelligent infrastructure. Rooted in Scandinavian values, we focus on early-stage investments with long-term partnership in mind.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>Minority Stakes – Seed Round Investments</h2>
+      <p>Aideus holds minority stakes in several promising early-stage companies, acquired during or shortly after their seed rounds:</p>
+      <ul>
+        <li><strong>Pictorytale</strong> – Energy analytics platform for Nordic housing cooperatives</li>
+        <li><strong>HotelOnline</strong> – Modular construction startup focused on carbon-neutral materials</li>
+        <li><strong>Key Butler</strong> – EV infrastructure grid optimizer</li>
+        <li><strong>Food Capture</strong> – EV infrastructure grid optimizer</li>
+        <li><strong>AppnGo</strong> – EV infrastructure grid optimizer</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Spin-outs from the Founders of Norway Propco</h2>
+      <ul>
+        <li><strong>One-eigth</strong> – AI-driven land use planning tool</li>
+        <li><strong>BuddyAR</strong> – Digital gallery and asset manager for architectural visualizations</li>
+        <li><strong>AR Dementia</strong> – Smart sensor networks for eco-living units</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Spin-ins Seeded by Aideus</h2>
+      <ul>
+        <li><strong>PatientBridge</strong> – Real-time carbon pricing API</li>
+        <li><strong>Roam Stop</strong> – Sustainable insulation materials sourced from Northern Europe</li>
+        <li><strong>DiaBeat</strong> – Operating system for smart neighborhoods</li>
+      </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section contact">
+      <h2>Pitch to Aideus</h2>
+      <p>We review investment opportunities on a rolling basis. If you are a founder building something meaningful at the intersection of design, sustainability, and systems intelligence, we’d love to hear from you.</p>
+      <p>Email us your pitch at <strong>jornlm@gmail.com</strong></p>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById('dropdownMenu');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+
+    document.addEventListener("click", function(event) {
+      const menu = document.getElementById("dropdownMenu");
+      const button = document.querySelector(".menu-button");
+      if (!menu.contains(event.target) && !button.contains(event.target)) {
+        menu.style.display = "none";
+      }
+    });
+  </script>
+
+</body>
+</html>
