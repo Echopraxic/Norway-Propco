@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aideus – Norway Propco</title>
+  <title>About Us – Norway Propco</title>
   <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
   <style>
     body {
@@ -13,6 +13,7 @@
       color: #4C5454;
     }
 
+    /* Nav bar */
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -97,38 +98,41 @@
       margin: auto;
     }
 
-    .section {
-      margin-bottom: 3rem;
+    .bio {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      gap: 1.5rem;
+      flex-wrap: wrap;
     }
 
-    .section h2 {
-      font-size: 1.75rem;
-      margin-bottom: 0.5rem;
-      color: #4C5454;
+    .bio img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #abdbe3;
     }
 
-    .section p,
-    .section ul {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    .section ul {
-      padding-left: 1.2rem;
-    }
-
-    .section li {
-      margin-bottom: 0.5rem;
-    }
-
-    .contact {
-      background-color: #f5f5f5;
-      padding: 1.5rem;
-      border-left: 4px solid #abdbe3;
-      font-family: 'Quattrocento', serif;
+    .bio-text {
+      flex: 1;
+      min-width: 250px;
     }
 
     @media (max-width: 768px) {
+      .bio {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .bio img {
+        margin-bottom: 1rem;
+      }
+
+      .bio-text {
+        text-align: center;
+      }
+
       .dropdown {
         left: 1rem;
         right: 1rem;
@@ -138,71 +142,79 @@
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Navigation (identical to index.html) -->
   <nav class="navbar">
     <button class="menu-button" onclick="toggleDropdown()">Menu</button>
     <div class="logo">Norway Propco</div>
     <div class="dropdown" id="dropdownMenu">
-      <a href="npc landing.html">OUR EXPERIENCE</a>
+      <a href="npc landing.html">OUR CONCEPTS</a>
       <a href="npc about us.html">ABOUT US</a>
-      <a href="npc aideus.html">AIDEUS</a>
-      <a href="npc projects.html">OUR PROJECTS</a>
+      <a href="npc aideus.html">VENTURE STUDIO</a>
+      <a href="npc projects.html">OUR EXPERIENCE</a>
     </div>
   </nav>
 
   <!-- Header -->
   <header>
-    <h1>Aideus</h1>
+    <h1>About Us</h1>
   </header>
 
-  <!-- Content -->
+  <!-- Body Content -->
   <div class="content">
     <div class="divider"></div>
 
-    <div class="section">
-      <h2>Venture Capital at the Edge of Innovation</h2>
-      <p>Aideus is the venture capital arm of Norway Propco. We back bold ideas and visionary founders building the future of sustainable living, design, and intelligent infrastructure. Rooted in Scandinavian values, we focus on early-stage investments with long-term partnership in mind.</p>
-    </div>
+    <p>We are a team of passionate property developers, designers, and strategists grounded in Nordic values and driven by sustainable innovation. At Norway Propco, our mission is to shape the future of living through timeless design and thoughtful execution.</p>
 
     <div class="divider"></div>
 
-    <div class="section">
-      <h2>Minority Stakes – Seed Round Investments</h2>
-      <p>Aideus holds minority stakes in several promising early-stage companies, acquired during or shortly after their seed rounds:</p>
-      <ul>
-        <li><strong>Pictorytale</strong> – Energy analytics platform for Nordic housing cooperatives</li>
-        <li><strong>HotelOnline</strong> – Modular construction startup focused on carbon-neutral materials</li>
-        <li><strong>Key Butler</strong> – EV infrastructure grid optimizer</li>
-        <li><strong>Food Capture</strong> – EV infrastructure grid optimizer</li>
-        <li><strong>AppnGo</strong> – EV infrastructure grid optimizer</li>
-      </ul>
+    <div class="bio">
+      <img src="Tore Borthen Mugshot.jpeg" alt="Tore Borthen">
+      <div class="bio-text">
+        <h3>Tore Borthen, Partner</h3>
+        <p>Tore Borthen has been active in real estate development since 2012, with a strong track record in property funds, having realized €2 billion in Aberdeen and NOK 1 billion in RealKapital. He brings over 20 years of leadership experience in finance from his roles at DNB and Nordea Investment Management, where he managed portfolios totaling NOK 50 billion. In addition, Tore has spent the past seven years as a business angel, investing in PropTech and HealthTech ventures.</p>
+      </div>
     </div>
 
-    <div class="section">
-      <h2>Spin-outs from the Founders of Norway Propco</h2>
-      <ul>
-        <li><strong>One-eigth</strong> – AI-driven land use planning tool</li>
-        <li><strong>BuddyAR</strong> – Digital gallery and asset manager for architectural visualizations</li>
-        <li><strong>AR Dementia</strong> – Smart sensor networks for eco-living units</li>
-      </ul>
+    <div class="bio">
+      <img src="Jorn LM Mugshot.jpeg" alt="Jørn Lien-Mathisen">
+      <div class="bio-text">
+        <h3>Jørn Lein-Mathisen, Partner</h3>
+        <p>Jørn Lein-Mathisen has over four years of experience in real estate development, building on a diverse background that bridges politics, technology, and entrepreneurship. For more than 13 years, he has been an active tech business angel, investing in and advising early-stage startups across various sectors. Earlier in his career, Jørn served as a parliamentary adviser to then-Minister of Housing Erna Solberg, gaining valuable insights into housing policy and national governance. His unique blend of political experience and entrepreneurial drive positions him as a dynamic contributor to the intersection of real estate and technology.</p>
+      </div>
     </div>
 
-    <div class="section">
-      <h2>Spin-ins Seeded by Aideus</h2>
-      <ul>
-        <li><strong>PatientBridge</strong> – Real-time carbon pricing API</li>
-        <li><strong>Roam Stop</strong> – Sustainable insulation materials sourced from Northern Europe</li>
-        <li><strong>DiaBeat</strong> – Operating system for smart neighborhoods</li>
-      </ul>
+    <div class="bio">
+      <img src="Samira Rahmani Mugshot.jpg" alt="Samira Rahmani">
+      <div class="bio-text">
+        <h3>Samira Rahmani, Controller</h3>
+        <p>Samira Rahmani is an experienced accountant with one and a half years of experience in accounting and finance in Norway, where she has managed end-to-end accounting for both production and service companies, including full accounting for 20 companies. She also brings over five years of international experience in similar roles. Known for being structured, responsible, sociable, and adaptable, Samira thrives in fast-paced environments and enjoys tackling complex tasks and new challenges. Her expertise includes full-cycle accounting, process improvement, and close collaboration with auditors.</p>
+      </div>
     </div>
 
-    <div class="divider"></div>
-
-    <div class="section contact">
-      <h2>Pitch to Aideus</h2>
-      <p>We review investment opportunities on a rolling basis. If you are a founder building something meaningful at the intersection of design, sustainability, and systems intelligence, we’d love to hear from you.</p>
-      <p>Email us your pitch at <strong>jornlm@gmail.com</strong></p>
+    <div class="bio">
+      <img src="Michael Mckenna Mugshot.jpg" alt="Michael Mckenna">
+      <div class="bio-text">
+        <h3>Michael Mckenna, Analyst</h3>
+        <p>Michael McKenna brings a multidisciplinary background in economics, computational analysis, and AI ethics, shaped by his career in academia, green infrastructure and technology policy. Recognized with the Don Lavoie Fellowship for his work on economics and monetary policy, Michael combines global perspective with analytical rigor. He has led market research on sustainable housing trends across Scandinavia, authored investment briefs for over €20M in green infrastructure projects, and developed financial models integrating ESG metrics into project feasibility studies. His expertise in sustainable innovation and technology strategy aligns with the firm’s mission to create forward-thinking real estate developments, and ventures in emerging technology.</p>
+      </div>
     </div>
+
+        <div class="bio">
+      <img src="Haley Solomon Mugshot.jpg" alt="Haley Solomon">
+      <div class="bio-text">
+        <h3>Haley Solomon</h3>
+        <p>Haley Solomon is an architect and designer with over a decade of experience spanning small-scale interior renovations to large-scale commercial and educational projects, guiding work from concept through construction. With an MSc in Advanced Sustainable Design from the University of Edinburgh, she brings a deep commitment to environmentally responsible and climate-resilient architecture. Her academic focus included sustainable materials, energy efficiency, and equitable urban planning, culminating in a dissertation exploring the role of insurance in resilient design within the wildland-urban interface of the American West. Haley has also contributed to global climate initiatives through her internship with the Cities, States & Regions team at CDP. Now based in Norway, she is eager to continue growing within the sustainable design field and to contribute her diverse expertise to creating resilient, future-ready environments.</p>
+      </div>
+    </div>
+
+        <div class="bio">
+      <img src="Karin Hoyland Mugshot.jpeg" alt="Karin Høyland">
+      <div class="bio-text">
+        <h3>Karin Høyland</h3>
+        <p>Karin Høyland is a senior researcher at SINTEF Building and Infrastructure and an associate professor at NTNU. A trained civil architect, she has worked at SINTEF since 1996 with a strong focus on housing and built environment solutions for the elderly and people with disabilities. Her research spans dementia-friendly design, accessible housing advisory services, and inclusive urban planning. She has also contributed to planning from a child’s perspective and participated in various architectural juries and advisory roles. Høyland was a member of the government-appointed “Innovation and Care” committee, which published a 2011 NOU highlighting architecture as a key strategy for addressing the needs of an aging population. She is also active in SINTEF’s interdisciplinary initiative on welfare technology.</p>
+      </div>
+    </div>
+
   </div>
 
   <!-- Script -->
@@ -212,6 +224,7 @@
       dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
     }
 
+    // Close dropdown if clicked outside
     document.addEventListener("click", function(event) {
       const menu = document.getElementById("dropdownMenu");
       const button = document.querySelector(".menu-button");
